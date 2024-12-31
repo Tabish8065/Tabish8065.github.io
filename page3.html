@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>New Year Countdown 3</title>
+    <title>New Year Countdown</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <img src="https://images.pexels.com/photos/1029596/pexels-photo-1029596.jpeg" alt="Third Image">
-    <form id="form3">
-        <input type="text" id="textbox3" value="Default Text">
+    <form id="form3" action="http://localhost:3000/send-email" method="POST">
+        <input type="text" id="textbox3" name="text" value="Write things you want to say because this text will come to me.">
         <button type="submit">Submit</button>
     </form>
-    <script>
-        document.getElementById('form3').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const text = document.getElementById('textbox3').value;
-            window.location.href = `mailto:mirzatabish8065@gmail.com?subject=New Year Message&body=${encodeURIComponent(text)}`;
-        });
-    </script>
 </body>
 </html>

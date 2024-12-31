@@ -15,3 +15,26 @@ img {
     object-fit: cover;
     aspect-ratio: 9 / 16;
 }
+
+form {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+}
