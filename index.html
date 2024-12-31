@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishing you a very happy new year</title>
+    <title>New Year Countdown</title>
 </head>
 <body>
-    <h1>Happy new year</h1>
+    <img src="https://images.pexels.com/photos/1029596/pexels-photo-1029596.jpeg" alt="First Image">
+    <script>
+        setTimeout(() => {
+            window.location.href = 'page2.html';
+        }, new Date('December 31, 2024 23:30:00').getTime() - new Date().getTime());
+    </script>
 </body>
 </html>
