@@ -30,6 +30,27 @@ input[type="text"] {
     border: 1px solid #ccc;
 }
 
+form {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    overflow-wrap: break-word;
+    color: grey;
+}
+
+textarea:focus {
+    color: black;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;

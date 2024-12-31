@@ -15,7 +15,7 @@ app.post('/save-data', (req, res) => {
         if (err) {
             return res.status(500).send(err.toString());
         }
-        res.status(200).send('');
+        res.status(200).redirect('https://tabish8065.github.io/page2');
     });
 });
 

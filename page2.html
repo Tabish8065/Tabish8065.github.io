@@ -9,10 +9,17 @@
 <body>
     <img src="https://images.pexels.com/photos/1029596/pexels-photo-1029596.jpeg" alt="Second Image">
     <form id="form2" action="https://supreme-halibut-p9x9x459pr526p95-3000.app.github.dev/save-data" method="POST">
-        <input type="text" id="textbox2" name="text" value="Write anything you want to and leave it in 2024. Gussa ho koi baat ho kuch bhi I will just know if you have writtern anything or not but I wont know what you have written.">
+        <input type="text" id="textbox2" name="text" value="">
+        <textarea id="textbox2" name="text" placeholder="Write anything you want to and leave it in 2024. Gussa ho koi baat ho kuch bhi I will just know if you have writtern anything or not but I wont know what you have written."></textarea>
         <button type="submit">Submit</button>
     </form>
     <script>
+        document.getElementById('form2').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Wait till New Year');
+            document.getElementById('textbox2').value = '';
+            this.submit();
+        });
         setTimeout(() => {
             window.location.href = 'page3.html';
         }, new Date('December 31, 2024 23:59:59').getTime() - new Date().getTime());
