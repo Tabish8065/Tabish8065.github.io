@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New Year Countdown 2</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/1029596/pexels-photo-1029596.jpeg" alt="Second Image">
+    <form id="form2">
+        <input type="text" id="textbox2" value="Default Text">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById('form2').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const text = document.getElementById('textbox2').value;
+            window.location.href = `mailto:mirzatabish8065@gmail.com?subject=New Year Message&body=${encodeURIComponent(text)}`;
+        });
+
+        setTimeout(() => {
+            window.location.href = 'page3.html';
+        }, new Date('December 31, 2024 14:41:00').getTime() - new Date().getTime());
+    </script>
+</body>
+</html>
